@@ -38,4 +38,4 @@ Các prompt trong PDF là hướng dẫn tham khảo của đề, không phải 
 
 ## 5. Tự thực hành
 
-Phần chỉnh sửa độc lập theo yêu cầu của đề cần bổ sung sau khi thực hiện: thuộc tính đã sửa, lý do và kết quả kiểm tra. Các kết quả kiểm tra hiện có trong phiên làm việc được thực hiện với hỗ trợ của Codex.
+Thực hiện sửa padding của .card-body từ 24px thành 26px theo hướng dẫn của AI để tăng khoảng cách giữa nội dung và mép thẻ. Tôi mở website trên Chrome để kiểm tra: tên sách, giá và nút hiển thị đầy đủ; phần giới thiệu mở được khi nhấn nút.
