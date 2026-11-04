@@ -81,7 +81,7 @@ Nút giới thiệu đổi nền sang xanh đậm và chữ trắng khi hover. F
 | Hover | Đạt | `:hover` true; màu nền đo được rgb(32,62,53), chữ trắng. |
 | Focus và bàn phím | Đạt | Tab/Shift+Tab đưa focus về summary; `:focus-visible` true; Enter đóng giới thiệu. |
 | Transition | Có cấu hình | CSS khai báo 0,2s; môi trường đang bật giảm chuyển động nên computed duration là 0s đúng theo media query. Chưa kiểm tra hoạt ảnh ở môi trường tắt tùy chọn này. |
-| Chỉnh sửa độc lập | Cần bổ sung | Ghi thuộc tính đã sửa, lý do và kết quả sau khi tự thực hành. |
+| Chỉnh sửa độc lập | Đã thực hiện theo hướng dẫn AI | Thực hiện đổi padding của .card-body từ 24px thành 26px để tăng khoảng cách giữa nội dung và mép thẻ. Kiểm tra trên Chrome: tên sách, giá và nút hiển thị đầy đủ; phần giới thiệu mở được khi nhấn nút. |
 
 ### Vấn đề, nguyên nhân và cách khắc phục
 
