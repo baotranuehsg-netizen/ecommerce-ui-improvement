@@ -214,7 +214,7 @@ img {
   color:var(--accent)
 }
 .card-body {
-  padding:24px;
+  padding:26px;
   display:flex;
   flex-direction:column;
   flex:1
