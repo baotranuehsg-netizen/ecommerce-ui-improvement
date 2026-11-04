@@ -1,78 +1,52 @@
-# E-commerce UI Improvement
+# Mộc - Bài tập cá nhân HTML5/CSS3
 
-## 1. Giới thiệu
+**Trần Quốc Bảo - MSSV 31241028457**
 
-Mộc là giao diện nhà sách minh họa cho bài tập cá nhân Chương 1 môn Phát triển ứng dụng WEB/TMĐT. Khu vực cải tiến là danh sách và thẻ sản phẩm: tên đầy đủ, giá bán nổi bật, giá gốc gạch ngang, phần trăm giảm và số tiền tiết kiệm.
+## Bài Buổi 2
 
-## 2. Website tham khảo
+Tiếp tục website Buổi 1 trong cùng repository. Trọng tâm: thẻ sách, danh sách thông số và menu điều hướng. Giữ bốn sản phẩm, giá và bìa SVG tự tạo; không dùng framework, backend hoặc JavaScript.
 
-- Tên: Vinabook.
-- URL: https://www.vinabook.com/
-- Đã khảo sát: trang chủ, danh mục sách kinh tế, chi tiết sản phẩm, tìm kiếm, giỏ hàng.
-- Xem bảng khảo sát và giới hạn kiểm chứng trong [BAO_CAO.md](BAO_CAO.md).
-- Mẫu Mộc là thiết kế độc lập; sách, tác giả, giá và bìa là dữ liệu hư cấu.
+- [Báo cáo Buổi 2: phân tích, kiểm thử, ảnh và 7 câu trả lời](BAO_CAO_BUOI2.md)
+- [Nhật ký AI và phần cần tự thực hành](AI_USAGE.md)
+- [Báo cáo Buổi 1](BAO_CAO.md)
+- [Mã nguồn công khai](https://github.com/baotranuehsg-netizen/ecommerce-ui-improvement)
+- [Website chạy trực tiếp](https://baotranuehsg-netizen.github.io/ecommerce-ui-improvement/)
 
-## 3. Chức năng
+## Website tham khảo
 
-- Hiển thị 4 sản phẩm với ảnh, tên, tác giả, giá bán, giá gốc, tỷ lệ giảm và số tiền tiết kiệm.
-- Nút “Xem giới thiệu” mở/đóng mô tả bằng `details/summary`, hoạt động không cần JavaScript.
-- Điều hướng đến tủ sách và phần giới thiệu bằng liên kết nội trang.
-- Responsive 4 cột trên màn hình lớn, 2 cột từ 601 đến 960 px, 1 cột từ 600 px trở xuống.
-- Không có giỏ hàng thật, đăng nhập, thanh toán, backend hoặc cơ sở dữ liệu.
+[Vinabook](https://www.vinabook.com/). Khảo sát Buổi 1 gồm trang chủ, danh mục, chi tiết, tìm kiếm và giỏ hàng. Mộc là thiết kế minh họa riêng, không sao chép mã hoặc bìa sách Vinabook. Tên sách, tác giả và giá là dữ liệu hư cấu.
 
-## 4. Công nghệ và cấu trúc
+## Thay đổi Buổi 2
 
-HTML5, CSS3, SVG tự tạo. Không thư viện, không phụ thuộc mạng.
+1. Dùng ul/li cho menu và thông tin ấn bản; đưa số trang, bìa sách ra ngoài mô tả đóng.
+2. Tăng padding thân thẻ từ 19 lên 24 px, dùng 20 px trên mobile; bo góc 12 px.
+3. Thực hành element/class/descendant selector, margin, padding và border-box.
+4. Dùng Flexbox cho menu, thông số và giá; giữ Grid 4/2/1 cột đã có.
+5. Thêm transition màu 0,2s, hover rõ ràng và focus-visible; tắt chuyển động nếu hệ điều hành yêu cầu giảm chuyển động.
+6. Định dạng lại mã để dễ đọc và sửa trực tiếp.
+
+## Cách chạy
+
+Tải hoặc clone repository; mở `index.html` bằng trình duyệt. Giữ nguyên các thư mục `css`, `images`. Không cần cài thư viện hoặc build.
 
 ```text
-ecommerce-ui-improvement/
-├── index.html
-├── css/style.css
-├── images/ (4 bìa sách SVG)
-├── README.md
-├── BAO_CAO.md
-├── AI_USAGE.md
-└── KIEM_TRA.md
+index.html
+css/style.css
+images/                 # 4 bìa SVG kế thừa
+screenshots/            # ảnh trước, sau và focus Buổi 2
+README.md
+BAO_CAO_BUOI2.md
+AI_USAGE.md
+BAO_CAO.md              # báo cáo Buổi 1
+KIEM_TRA.md             # kiểm tra Buổi 1
 ```
 
-## 5. Cách chạy
+## Kiểm tra
 
-Giải nén toàn bộ dự án, mở `index.html` bằng Chrome, Edge hoặc Firefox. Giữ nguyên thư mục `css/` và `images/`. Không cần cài thư viện hoặc chạy lệnh build.
+Đã kiểm tra bằng trình duyệt ở desktop 1366 px, mobile 390 px và hai độ rộng 767/769 px quanh mốc tablet 768 px do làm tròn mức thu phóng. Ảnh hiển thị, không tràn ngang; click mở mô tả, Tab/Shift+Tab hiển thị focus, Enter đóng mô tả. Các kiểm tra này do AI thực hiện, chưa phải xác nhận sinh viên tự kiểm tra.
 
-## 6. Cải tiến đã thực hiện
+![Giao diện Buổi 2](screenshots/sau-desktop.png)
 
-- Gom giá bán, giá gốc và tiền tiết kiệm trong cùng thẻ, giúp so sánh nhanh.
-- Không cắt tên sách dài; dùng `minmax(0,1fr)` để cột không bị nội dung đẩy rộng.
-- `object-fit: contain` giữ nguyên toàn bộ bìa sách.
-- Nút thao tác cao tối thiểu 46 px; có viền focus cho bàn phím và liên kết bỏ qua phần đầu trang.
-- Sau kiểm tra ảnh, thêm `z-index: 1` cho nhãn giảm giá để ảnh sách có `filter` không che nhãn.
+## Sử dụng AI
 
-## 7. Hỗ trợ từ AI
-
-Codex hỗ trợ khảo sát, thiết kế, viết mã và kiểm tra. Đây không phải tuyên bố sinh viên đã tự thực hiện các bước đó. Nhật ký trung thực nằm trong [AI_USAGE.md](AI_USAGE.md); các việc sinh viên cần tự làm nằm trong [KIEM_TRA.md](KIEM_TRA.md).
-
-## 8. Đưa lên GitHub
-
-Chưa tạo repository hoặc xuất bản website cho tài khoản sinh viên. Thực hiện sau khi đã tự kiểm tra bài:
-
-1. Đăng nhập GitHub, tạo repository `ecommerce-ui-improvement`, chọn Public.
-2. Dùng **Add file → Upload files**, tải toàn bộ nội dung bên trong thư mục dự án, giữ nguyên cấu trúc. Không tải nguyên file ZIP. `index.html` phải nằm ở gốc repository.
-3. Commit với nội dung `Add responsive bookstore UI and survey report`.
-4. Mở repository khi chưa đăng nhập để kiểm tra khả năng truy cập công khai.
-5. Nếu cần website chạy trực tiếp: **Settings → Pages → Deploy from a branch → main → /(root) → Save**.
-6. Chờ GitHub triển khai và mở URL được hiển thị ở Pages. Kiểm tra ảnh và CSS. Không tự điền URL dự đoán vào báo cáo.
-
-Nếu dùng Git, tạo repo rỗng trước rồi chạy trong thư mục dự án:
-
-```bash
-git init
-git add .
-git commit -m "Add responsive bookstore UI and survey report"
-git branch -M main
-git remote add origin https://github.com/USERNAME/ecommerce-ui-improvement.git
-git push -u origin main
-```
-
-Thay `USERNAME` bằng tên tài khoản thật. Nếu Git chưa có danh tính, đặt `git config user.name` và `git config user.email` riêng trong dự án bằng thông tin của bạn. Không commit token hoặc mật khẩu.
-
-Tài liệu: https://docs.github.com/en/pages
+Codex hỗ trợ đọc đề, phân tích mã, chỉnh HTML/CSS, chụp ảnh và viết báo cáo. Yêu cầu thực tế cùng cách kiểm chứng được ghi trong AI_USAGE.md. Sinh viên cần tự đọc mã, thử một thay đổi và giải thích khi giảng viên yêu cầu. Không có chức năng mua hàng hay thanh toán thật.

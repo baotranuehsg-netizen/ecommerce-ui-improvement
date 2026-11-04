@@ -82,7 +82,7 @@ Kết quả chạy thử nằm trong `KIEM_TRA.md`. Một lỗi được AI phá
 
 Bộ mã nguồn đã có `index.html`, `css/style.css`, bốn hình SVG, README, báo cáo, nhật ký AI và bảng kiểm tra. Có thể chạy trực tiếp từ máy tính. Hướng dẫn tạo repository Public và bật GitHub Pages nằm trong README.
 
-**Trạng thái:** Chưa tạo repository hoặc triển khai GitHub Pages vì chưa có tài khoản/repository đích được người dùng chỉ định. URL repository và website chỉ bổ sung sau khi xuất bản và kiểm tra thật.
+**Cập nhật triển khai:** Mã nguồn Buổi 1 đã được đưa lên repository công khai https://github.com/baotranuehsg-netizen/ecommerce-ui-improvement và GitHub Pages đã được bật. Bài Buổi 2 tiếp tục trong cùng repository; xem BAO_CAO_BUOI2.md.
 
 ## 8. Những điểm cần giải thích khi trình bày
 

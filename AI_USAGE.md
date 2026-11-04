@@ -1,3 +1,46 @@
+# Nhật ký AI - Buổi 2
+
+**Sinh viên:** Trần Quốc Bảo - 31241028457  
+**Ngày:** 04/11/2026  
+**Công cụ:** Codex trong ứng dụng máy tính.
+
+## Yêu cầu thực tế
+
+Người dùng gửi BaiTap_CaNhan_Buoi2.pdf và yêu cầu: “Đọc và làm bài tập cho tôi”. Đề và mã nguồn Buổi 1 là ngữ cảnh để làm bài. Không có chín lượt người dùng riêng biệt tương ứng chín prompt mẫu trong PDF; không ghi chúng thành lịch sử giả.
+
+## Các nội dung AI xử lý từ yêu cầu
+
+| Nội dung | Kết quả | Cách đối chiếu |
+| --- | --- | --- |
+| Rà soát mã Buổi 1 | Giữ sản phẩm; chọn thẻ và menu để cải tiến | Clone repository, lấy mốc d8a2aa0 và chụp ảnh trước |
+| HTML có ngữ nghĩa | Thêm ul/li cho menu/thông số; giữ section/article, h1/h2/h3 | Đọc mã, kiểm tra DOM và các đích liên kết |
+| Box Model/selector | Padding 24/20 px, margin thông số 18 px, border và bo góc | Đọc computed style trên trình duyệt |
+| Flexbox/Grid | Menu/thông số theo hàng; lưới 4/2/1 cột | Thay kích thước viewport, đo số cột |
+| Hover/focus | Màu hover và outline bàn phím | Click, Tab, Shift+Tab, Enter và ảnh focus |
+| Tài liệu | Báo cáo, bảy câu trả lời và README | Đối chiếu đủ danh mục sản phẩm nộp ở trang cuối PDF |
+
+## Kiểm tra, điều chỉnh và ý tưởng không dùng
+
+- Không viết lại website mới; kế thừa đúng bốn sách và ảnh cũ.
+- Không dùng Bootstrap/Tailwind hoặc JavaScript vì bài tập tập trung HTML/CSS.
+- Giữ object-fit: contain thay vì cover để bìa không bị cắt.
+- Reset margin/padding/list-style của ul để menu không nhận khoảng thụt mặc định.
+- Thêm quy tắc hover riêng cho summary khi details đang mở, tránh nền sáng ghi đè trong lúc chữ trắng.
+- Tăng padding desktop nhưng dùng 20 px trên mobile; công cụ đo xác nhận các giá trị và không tràn ngang.
+- Môi trường đang bật prefers-reduced-motion: reduce, vì vậy không ghi giả rằng đã quan sát transition 0,2s hoạt động. Màu hover và focus đã kiểm tra trực tiếp.
+
+## Phần sinh viên tự điều chỉnh
+
+Chưa có bằng chứng sinh viên đã trực tiếp thực hiện thay đổi độc lập trong phiên này. Sau khi tự làm, ghi ngắn gọn: vấn đề nhìn thấy, thuộc tính đã sửa, dự đoán trước khi chạy và kết quả sau khi chạy. Ví dụ có thể thử thay padding hoặc gap menu, nhưng chỉ ghi hoàn thành khi đã thực sự làm.
+
+## Nội dung cần giải thích
+
+Vai trò nav/article/ul/li; margin khác padding; box-sizing: border-box; trục chính/phụ của Flexbox; Grid chia cột; object-fit; hover khác focus-visible; media query và giảm chuyển động. Câu trả lời gắn với selector cụ thể trong BAO_CAO_BUOI2.md.
+
+---
+
+## Lưu nhật ký Buổi 1
+
 # AI Usage Log
 
 ## 1. Công cụ AI
