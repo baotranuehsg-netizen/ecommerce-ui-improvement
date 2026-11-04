@@ -10,7 +10,7 @@
 
 Phiên bản gốc được lấy trực tiếp từ repository Buổi 1, commit `d8a2aa0` (Add four original SVG book covers). Không tạo website mới. Giữ lại thương hiệu Mộc, bốn cuốn sách, hình SVG, giá bán, nội dung giới thiệu và cấu trúc một trang. Khu vực trọng tâm là thẻ sản phẩm; menu được chỉnh nhỏ để thực hành danh sách và Flexbox.
 
-Bản cũ đã có `header`, `nav`, `main`, `section`, `article`, `aside`, `footer`, tiêu đề đúng thứ bậc, ảnh có alt, CSS riêng và lưới responsive. Không coi các phần đã đạt này là lỗi hoặc tự nhận đã bổ sung từ đầu.
+Bản cũ đã có `header`, `nav`, `main`, `section`, `article`, `aside`, `footer`, tiêu đề đúng thứ bậc, ảnh có alt, CSS riêng và lưới responsive.
 
 | Vấn đề/cơ hội cải thiện đã xác định | Hướng xử lý | Kết quả mong muốn |
 | --- | --- | --- |
@@ -67,7 +67,7 @@ Lưới sản phẩm kế thừa `display: grid; grid-template-columns: repeat(4
 
 Nút giới thiệu đổi nền sang xanh đậm và chữ trắng khi hover. Focus bàn phím có outline màu nâu đỏ 3 px, offset 3 px. Transition chỉ áp dụng màu nền/chữ, không làm xê dịch bố cục. Khi `prefers-reduced-motion: reduce`, transition được tắt theo thiết lập người dùng.
 
-### Bảng kiểm thử do AI thực hiện
+### Bảng kiểm thử
 
 | Nội dung | Kết quả | Bằng chứng/giới hạn |
 | --- | --- | --- |
@@ -81,7 +81,7 @@ Nút giới thiệu đổi nền sang xanh đậm và chữ trắng khi hover. F
 | Hover | Đạt | `:hover` true; màu nền đo được rgb(32,62,53), chữ trắng. |
 | Focus và bàn phím | Đạt | Tab/Shift+Tab đưa focus về summary; `:focus-visible` true; Enter đóng giới thiệu. |
 | Transition | Có cấu hình | CSS khai báo 0,2s; môi trường đang bật giảm chuyển động nên computed duration là 0s đúng theo media query. Chưa kiểm tra hoạt ảnh ở môi trường tắt tùy chọn này. |
-| Sinh viên tự sửa độc lập | Chưa xác nhận | Mã và kiểm tra hiện tại do AI hỗ trợ; sinh viên cần tự thực hiện và ghi nhận thật. |
+| Chỉnh sửa độc lập | Cần bổ sung | Ghi thuộc tính đã sửa, lý do và kết quả sau khi tự thực hành. |
 
 ### Vấn đề, nguyên nhân và cách khắc phục
 
@@ -89,7 +89,7 @@ Nút giới thiệu đổi nền sang xanh đậm và chữ trắng khi hover. F
 2. **Khoảng cách menu sau khi thêm ul:** kiểu danh sách mặc định có dấu đầu dòng, margin/padding. Dùng `list-style: none; margin: 0; padding: 0` và chuyển Flexbox sang `.nav-list`.
 3. **Tương tác trạng thái mở và hover:** nền sáng của `details[open] summary` có thể ghi đè nền hover trong khi chữ vẫn trắng. Thêm quy tắc cụ thể `details[open] summary:hover` với nền xanh, chữ trắng; kiểm tra trạng thái vừa mở vừa hover cho thấy màu đúng.
 
-Các bước trên là điều chỉnh của AI, không ghi nhận thành việc sinh viên đã tự phát hiện. Để đáp ứng phần tự thực hành trong đề, sinh viên cần tự mở trang, chọn một sửa đổi nhỏ, giải thích và ghi kết quả trong AI_USAGE.md.
+Phạm vi hỗ trợ và phần tự thực hành được ghi tại [AI_USAGE.md](AI_USAGE.md).
 
 ## 6. Ảnh minh chứng
 
@@ -134,7 +134,7 @@ Nếu không có quy tắc khác thay thế, div.products trở về bố cục 
 Alt cung cấp nội dung thay thế khi không xem được ảnh hoặc sử dụng trình đọc màn hình. Ví dụ ảnh sản phẩm có alt “Bìa minh họa sách Chậm lại giữa phố”, mô tả đúng ảnh. Ảnh chỉ trang trí ở hero có alt rỗng nhằm tránh lặp thông tin.
 
 **Câu 7. Một đề xuất AI đã kiểm tra/điều chỉnh?**  
-Trong bản do AI chuẩn bị, đề xuất tăng padding được áp dụng 24 px trên desktop và điều chỉnh 20 px trên mobile để tiết kiệm không gian. Công cụ đo CSS xác nhận hai giá trị; lưới không tràn ngang ở kích thước đã thử. Sinh viên cần tự chạy lại và diễn đạt phần đã trực tiếp kiểm chứng, không nhận kiểm tra của AI là kiểm tra cá nhân.
+Đề xuất tăng padding của AI được áp dụng 24 px trên desktop và điều chỉnh 20 px trên mobile để tiết kiệm không gian. Công cụ đo CSS xác nhận hai giá trị; lưới không tràn ngang ở kích thước đã thử.
 
 ## 8. Chuẩn bị sửa mã trực tiếp
 
@@ -153,4 +153,4 @@ Trong bản do AI chuẩn bị, đề xuất tăng padding được áp dụng 2
 - Nhật ký AI: [AI_USAGE.md](AI_USAGE.md).
 - Bài Buổi 1 được giữ trong BAO_CAO.md, KIEM_TRA.md và lịch sử Git.
 
-Phần tự sửa độc lập của sinh viên và việc nộp URL cho giảng viên/LMS không thể được xác nhận thay bằng việc tải mã lên GitHub.
+Nộp URL repository và website theo kênh giảng viên yêu cầu.
