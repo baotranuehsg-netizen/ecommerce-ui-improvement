@@ -1,0 +1,20 @@
+.exercise { display: grid; gap: 28px; }
+.demo { padding: 22px; border: 1px solid var(--line); border-radius: 14px; }
+.demo h2 { margin-top: 0; font-size: 18px; color: var(--muted); }
+.ueh { color: blue; text-align: center; font-weight: bold; text-decoration: underline; font-size: 30px; }
+.cnttd { color: red; text-align: right; font-style: italic; border: 3px dotted #e5b700; border-radius: 12px; background: #ddd; font-size: 15px; opacity: .5; padding: 18px; }
+.bit-ueh {
+  display: inline-block;
+  padding: 8px 16px;
+  font: 900 48px Impact, sans-serif;
+  letter-spacing: 1px;
+  color: #f3cb42;
+  background: #78a116;
+  text-shadow: 2px 2px 0 #a70808, 4px 4px 4px rgba(50,0,0,.55), 0 0 8px white;
+}
+.logo-background { min-height: 190px; border-radius: 10px; background: #f3f6f6 url('../images/BIT_logo_facebook.jpg') repeat fixed; background-size: 30px 30px; }
+.overflow-row { display: flex; flex-wrap: wrap; gap: 18px; }
+.overflow-demo { width: 100px; height: 50px; padding: 4px; border: 1px solid #888; background: #fff9d9; }
+.hidden { overflow: hidden; }
+.ellipsis { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.nowrap { white-space: nowrap; overflow: visible; }
