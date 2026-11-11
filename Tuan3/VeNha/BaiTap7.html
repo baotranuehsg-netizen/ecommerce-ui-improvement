@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bài tập 7 - Bố cục trang</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"><link rel="stylesheet" href="css/common.css">
+  <style>
+    #wrapper{width:min(520px,100%);margin:30px auto;padding:10px;border:3px solid #111;display:grid;grid-template-columns:90px 1fr;grid-template-rows:90px 290px 65px;gap:8px;box-shadow:0 10px 24px #aaa;background:white}#wrapper>*{border:3px solid #111;padding:8px;font:22px "Times New Roman",serif;color:#111}#wrapper header{grid-column:1/-1}#wrapper nav{grid-column:1}#wrapper main{grid-column:2}#wrapper footer{grid-column:1/-1}@media(max-width:450px){#wrapper{grid-template-columns:1fr;grid-template-rows:auto}#wrapper>*{grid-column:1!important;min-height:75px}}
+  </style>
+</head>
+<body>
+  <main class="page-shell"><header class="topbar"><a class="home" href="index.html"><i class="fas fa-home"></i> Trang chính</a><span class="student">Trần Quốc Bảo · 31241028457</span></header><section class="content"><h1>Bài tập 7 - Bố cục trang</h1><p class="intro">Bố cục gồm header ở trên, nav bên trái, main bên phải và footer ở dưới.</p><div id="wrapper"><header>header</header><nav>nav</nav><main>main</main><footer>footer</footer></div><a class="back-link" href="index.html">← Quay lại danh sách bài</a></section>
+  </main>
+</body>
+</html>
