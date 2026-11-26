@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lịch công việc</title>
+  <link rel="stylesheet" href="/style.css">
+  <script src="/app.js" defer></script>
+</head>
+<body>
+  <header class="masthead">
+    <div class="wrap">
+      <p class="subject">Bài thực hành BackEnd</p>
+      <h1>Lịch công việc</h1>
+      <p class="subtitle">Ghi lại việc cần làm và theo dõi tiến độ của bạn.</p>
+    </div>
+  </header>
+  <main class="wrap">
+    <section class="metrics" aria-label="Thống kê công việc">
+      <div><span>Tổng công việc</span><strong id="total">…</strong></div>
+      <div><span>Đang thực hiện</span><strong id="remaining">…</strong></div>
+      <div><span>Đã hoàn thành</span><strong id="done">…</strong></div>
+    </section>
+    <section class="board" aria-labelledby="board-title">
+      <h2 id="board-title">Danh sách công việc</h2>
+      <form id="task-form">
+        <label for="title">Tên công việc</label>
+        <div class="input-row">
+          <input id="title" maxlength="120" required placeholder="Ví dụ: Ôn bài Node.js">
+          <button id="save" type="submit" class="primary">Thêm công việc</button>
+          <button id="cancel" type="button" hidden>Hủy sửa</button>
+        </div>
+      </form>
+      <p id="message" role="status" aria-live="polite"></p>
+      <ul id="task-list" aria-label="Các công việc"></ul>
+      <p id="empty" hidden>Chưa có công việc. Thêm việc đầu tiên ở trên.</p>
+    </section>
+  </main>
+</body>
+</html>
